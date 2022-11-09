@@ -2,7 +2,7 @@
 # userId and id will be positive integers or 999
 # title will be a non-emtpy string or 'default'
 # completed will be boolean True or False, default to False
-# all these properties will be accesed via get/set methods
+# all these properties will be accessed via get/set methods
 
 class Todo(object): # by default all classes inherit from 'Object'
     def __init__(self, id, userId, title, completed):
