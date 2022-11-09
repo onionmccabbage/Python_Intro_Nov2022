@@ -39,8 +39,17 @@ class Person(): # by convention we use initial caps for classes
             self.__age = 42 # provide a sensible default
     def getAge(self):
         return self.__age
-    name = property(getName, setName) # make our methods look like properties
-    age  = property(getAge, setAge)
+    # here are get-set methods for 'email'
+    def setEmail(self, e):
+        if type(e)==str:
+            self.__email = e
+        else:
+            self.__email = ''
+    def getEmail(self):
+        return self.__email
+    name  = property(getName, setName) # make our methods look like properties
+    age   = property(getAge, setAge)
+    email = property(getEmail, setEmail)
 
 if __name__ == '__main__':
     p1 = Person('Ada', 42, '') # here we create an instance of our class
