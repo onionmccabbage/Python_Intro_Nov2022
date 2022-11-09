@@ -8,7 +8,7 @@ class Duck(object):
     def __str__(self): # give our class a nice way to print itself
         return '{}'.format(self.name)
     @classmethod
-    def numDucks(cls): # clas methods take cls NOT self
+    def numDucks(cls): # class methods take cls NOT self
         return cls.count
     @staticmethod
     def promo(): # no self, no cls - this is a static method

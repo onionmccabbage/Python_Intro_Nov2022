@@ -4,7 +4,11 @@ import doctest # doctest lets us write simple unit tests for our code
 def cube(x):
     '''this function will take a number and return the cube of that number
     >>> cube(3)
-    999
+    27
+    >>> cube(-3)
+    -27
+    >>> cube(999)
+    997002999
     '''
     return x*x*x
 
@@ -13,4 +17,4 @@ if __name__ == '__main__':
     print( cube(-3) ) # -3 cubed is -27
     print( cube(1)  ) # 1 cubed is 1
     print( cube(30) ) # 30 cubed is 2700
-    doctest.testmod()
+    doctest.testmod(verbose=True)

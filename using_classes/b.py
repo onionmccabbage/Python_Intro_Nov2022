@@ -23,3 +23,5 @@ if __name__ == '__main__':
     c = Coder('Timnit', 38, 'timnit@nasa.ie', 'Python')
     c.language = 'Jython'
     print(c.email, c.language)
+    # we can always access the docstring
+    print(Coder.__doc__)
